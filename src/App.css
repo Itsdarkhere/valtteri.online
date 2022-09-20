@@ -1,38 +1,129 @@
 .App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.header {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Inconsolata";
+}
+.header_img {
+  padding-right: 10px;
+}
+.container_default {
+  display: block;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container_medium {
+  max-width: 1068px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container_small {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.section {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.section_large_padding {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.section_divider {
+  height: 1px;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #6e7191;
+}
+.text_center {
+  text-align: center;
+}
+.h2 {
+  font-family: "Inconsolata";
   color: white;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.h3 {
+  font-family: "Inconsolata";
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p {
+  font-family: "Inconsolata";
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+.w_button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898EC;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+.main_button {
+  padding: 28px 56px;
+  border-radius: 100px;
+  background-color: #007bff;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.basic_button {
+  padding: 28px 56px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 100px;
+  background-color: #fff;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  color: #007bff;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.w_button:hover {
+  filter: brightness(80%);
+}
+@media screen and (max-width: 767PX) {
+    .h2 {
+      font-size: 38px;
+      line-height: 48px;
+    }
 }
