@@ -12,8 +12,10 @@ function App() {
   return (
     <div className="App">
       <header className='header'>
-            <img className='header_img' src={header_cube} alt="cube" />
-            Valtteri Juvonen
+        <div className='header_container'>
+          <img className='header_img' src={header_cube} alt="cube" />
+          Valtteri Juvonen
+        </div>
       </header>
       <HeroSection />
       <Projects />

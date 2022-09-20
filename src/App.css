@@ -6,11 +6,14 @@
   overflow: hidden;
 }
 .header {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: transparent;
+}
+.header_container {
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
   height: 100px;
   display: flex;
   flex-direction: row;
