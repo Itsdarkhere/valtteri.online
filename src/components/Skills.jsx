@@ -2,6 +2,7 @@ import React from 'react'
 import "../css/Skills.css"
 import { FaAngular, FaGit, FaRust, FaReact, FaAws, FaGoogle, FaDatabase } from "react-icons/fa"
 import { SiGoland, SiPostgresql } from "react-icons/si"
+import { useIntersectionObserver } from '../hooks/intersection-observer.ts'
 
 export const Skills = () => {
     const skills_list = [
@@ -43,9 +44,15 @@ export const Skills = () => {
         },
     ]
 
+    const onObserveAnimate = () => {
+        document.getElementById("container_skills").classList.add("skills_animation");
+    }
+
+    const ref = useIntersectionObserver(onObserveAnimate);
+
   return (
-    <div className='section skills_section'>
-        <div className='container_default'>
+    <div ref={ref} className='section skills_section'>
+        <div className='container_default' id="container_skills">
             <div className='text_center'>
                 <h2 className="h2" style={{marginBottom: 0}}>Skills and tools</h2>
             </div>

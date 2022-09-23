@@ -1,13 +1,13 @@
 .gh_cta {
     padding: 140px 85px;
     border-radius: 24px;
-    background-image: url("https://uploads-ssl.webflow.com/6148aea…/6148aea…_deso-background-cta-blue.png");
     background-color: #292941;
     background-position: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .gh_cta_grid {
+    opacity: 0;
     display: grid;
     gap: 60px;
     -ms-grid-columns: 1fr 0.5fr;
@@ -28,6 +28,20 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+.gh_cta_animation {
+    animation: githubAnimation 0.3s forwards;
+}
+@keyframes githubAnimation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 991px) {
     .gh_cta {

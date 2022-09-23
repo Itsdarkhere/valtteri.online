@@ -40,6 +40,10 @@
     font-weight: 600;
     font-family: "Inconsolata";
 }
+.skills_animation {
+    animation: intersectionAnimation 0.4s forwards;
+}
+/*  */
 @media screen and (max-width: 991px) {
     .skills_grid {
         grid-template-columns: 1fr 1fr;
@@ -48,5 +52,15 @@
 @media screen and (max-width: 767px) {
     .skills_grid {
         grid-template-columns: 1fr;
+    }
+}
+@keyframes intersectionAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

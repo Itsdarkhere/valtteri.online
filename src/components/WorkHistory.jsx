@@ -1,14 +1,27 @@
 import React from "react";
 import "../css/WorkHistory.css";
+import { useIntersectionObserver } from "../hooks/intersection-observer.ts";
 
 export const WorkHistory = () => {
+
+    const onObserveAnimateOne = () => {
+        document.getElementById("wh_card_one").classList.add("wh_animation");
+    }
+
+    const onObserveAnimateTwo = () => {
+        document.getElementById("wh_card_two").classList.add("wh_animation");
+    }
+
+    const ref1 = useIntersectionObserver(onObserveAnimateOne);
+    const ref2 = useIntersectionObserver(onObserveAnimateTwo);
+
   return (
     <div className='section section_large_padding'>
       <div className='container_small'>
         <h2 className='h2' style={{ marginBottom: "40px" }}>
           Work Experience
         </h2>
-        <div className='wh_card wh_card_top'>
+        <div ref={ref1} className='wh_card wh_card_top' id="wh_card_one">
           <img
             className='wh_card_img'
             src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/new_logo_transp__4__P2iO86ho0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663900682184'
@@ -27,7 +40,7 @@ export const WorkHistory = () => {
             </p>    
           </div>
         </div>
-        <div className='wh_card'>
+        <div ref={ref2} className='wh_card' id="wh_card_two">
           <img
             className='wh_card_img'
             src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/new_logo_transp__4__P2iO86ho0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663900682184'

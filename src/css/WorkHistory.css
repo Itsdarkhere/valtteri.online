@@ -1,4 +1,5 @@
 .wh_card {
+    opacity: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -17,6 +18,19 @@
     line-height: 30px;
     font-family: "Inconsolata";
     color: white;
+}
+.wh_animation {
+    animation: whAnimation 0.4s forwards;
+}
+@keyframes whAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 @media screen and (max-width: 991px) {
     .wh_card {

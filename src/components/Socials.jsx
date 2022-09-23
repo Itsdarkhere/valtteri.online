@@ -1,14 +1,22 @@
 import React from 'react'
 import "../css/Socials.css"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { useIntersectionObserver } from '../hooks/intersection-observer.ts'
 
 export const Socials = () => {
+
+    const onObserveAnimate = () => {
+        document.getElementById("socials_header").classList.add("socials_animations");
+    }
+
+    const ref = useIntersectionObserver(onObserveAnimate);
+
   return (
     <div className='section'>
         <div className='container_medium'>
             <div className='socials_cta'>
                 <div className='socials_heading_box'>
-                    <h2 className='h2'>My Socials</h2>
+                    <h2 ref={ref} className='h2 opacity_0' id="socials_header">My Socials</h2>
                 </div>
                 <div className='socials_buttons_grid'>
                     <div className='social_cta_button'>
