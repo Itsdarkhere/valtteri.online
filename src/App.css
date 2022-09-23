@@ -71,7 +71,7 @@
   font-family: "Inconsolata";
   margin-top: 0px;
   margin-bottom: 15px;
-  color: #fff;
+  color: white;
   font-size: 24px;
   line-height: 34px;
   font-weight: 700;
@@ -81,7 +81,7 @@
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 30px;
-  color: #fff;
+  color: white;
 }
 .w_button {
   display: inline-block;
@@ -104,7 +104,10 @@
   font-size: 20px;
   line-height: 22px;
   font-weight: 700;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .basic_button {
   padding: 28px 56px;
@@ -119,7 +122,10 @@
   font-size: 20px;
   line-height: 22px;
   font-weight: 700;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .w_button:hover {
   filter: brightness(80%);

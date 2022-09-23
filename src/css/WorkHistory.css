@@ -7,6 +7,9 @@
     margin-bottom: 100px;
 }
 .wh_card_img {
+    max-width: 273px;
+    width: 90%;
+    height: auto;
     margin-right: 63px;
 }
 .wh_card_description {

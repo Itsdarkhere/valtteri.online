@@ -1,7 +1,48 @@
 import React from 'react'
 import "../css/Skills.css"
+import { FaAngular, FaGit, FaRust, FaReact, FaAws, FaGoogle, FaDatabase } from "react-icons/fa"
+import { SiGoland, SiPostgresql } from "react-icons/si"
 
 export const Skills = () => {
+    const skills_list = [
+        {
+            skill: "React",
+            icon: <FaReact size="25" />
+        },
+        {
+            skill: "Angular",
+            icon: <FaAngular size="25" />
+        },
+        {
+            skill: "Go",
+            icon: <SiGoland size="25" />
+        },
+        {
+            skill: "Rust",
+            icon: <FaRust size="25" />
+        },
+        {
+            skill: "Git",
+            icon: <FaGit size="25" />
+        },
+        {
+            skill: "AWS",
+            icon: <FaAws size="25" />
+        },
+        {
+            skill: "GCP",
+            icon: <FaGoogle size="25" />
+        },
+        {
+            skill: "SQL",
+            icon: <FaDatabase size="25" />
+        },
+        {
+            skill: "Postgres",
+            icon: <SiPostgresql size="25" />
+        },
+    ]
+
   return (
     <div className='section skills_section'>
         <div className='container_default'>
@@ -10,14 +51,12 @@ export const Skills = () => {
             </div>
             <div className='container_small'>
                 <div className='skills_grid'>
-                    {Array.from({ length: 9}, (_, i) =>
+                    {skills_list.map((o, i) =>
                         <div key={i} className='skill_card'>
-                            <img 
-                            className='skill_icon' 
-                            src="https://uploads-ssl.webflow.com/6148aea00f7f90ad88e373a0/6148aea00f7f90821ee373fe_deso-holders-icon-blockchange.svg"
-                            alt="skill_icon" 
-                            />
-                            <p className='skill_text'>Blockchange</p>
+                            <div className='skill_icon'>
+                                {o.icon}
+                            </div>
+                            <p className='skill_text'>{o.skill}</p>
                         </div>
                     )}
                 </div>

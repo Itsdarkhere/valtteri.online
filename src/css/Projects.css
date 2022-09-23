@@ -24,7 +24,14 @@
     text-align: center;
 }
 .project_icon {
-    margin-bottom: 20px;   
+    width: 94px;
+    height: 94px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width: 991px) {
     .section_projects {

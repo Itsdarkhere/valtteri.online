@@ -1,5 +1,6 @@
 import React from 'react'
 import "../css/GithubCTA.css"
+import { FaGithub } from "react-icons/fa"
 
 export const GithubCTA = () => {
   return (
@@ -12,7 +13,10 @@ export const GithubCTA = () => {
                         <p className='p'>Check out my github, it contains all of my projects!</p>
                     </div>
                     <div className='gh_cta_grid_right'>
-                        <a href="aa" className='basic_button'>Open Github</a>
+                        <a href="aa" className='basic_button'>
+                            <FaGithub style={{marginRight: "10"}} size="20" />    
+                            Open Github
+                        </a>
                     </div>
                 </div>
             </div>

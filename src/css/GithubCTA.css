@@ -30,6 +30,9 @@
     align-items: center;
 }
 @media screen and (max-width: 991px) {
+    .gh_cta {
+        padding: 80px 40px;
+    }
     .gh_cta_grid {
         grid-template-columns: 1fr;
     }
@@ -38,5 +41,10 @@
     }
     .gh_text-container {
         text-align: center;
+    }
+}
+@media screen and (max-width: 479px) {
+    .gh_cta {
+        padding: 60px 25px;
     }
 }
