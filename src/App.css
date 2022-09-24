@@ -133,6 +133,9 @@
 .w_button:hover {
   filter: brightness(80%);
 }
+.basic_button:hover {
+  filter: brightness(80%);
+}
 @media screen and (max-width: 767PX) {
     .h2 {
       font-size: 38px;

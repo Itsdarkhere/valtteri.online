@@ -23,6 +23,10 @@
     border-radius: 16px;
     background-color: #292941;
     text-align: center;
+    transition-duration: 0.1s;
+}
+.project_card:hover {
+    background-color: #1f1f30;
 }
 .project_icon {
     width: 94px;
