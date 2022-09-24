@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://ik.imagekit.io/s93qwyistj0/valtteriOnline/heading_cube_l-ZHHiM7Z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663977666465",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://ik.imagekit.io/s93qwyistj0/valtteriOnline/heading_cube_l-ZHHiM7Z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663977666465",
       "type": "image/png",
       "sizes": "512x512"
     }
