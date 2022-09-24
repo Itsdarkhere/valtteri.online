@@ -15,12 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #0e0e23;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .font_one {
   font-family: "Inconsolata";
 }
