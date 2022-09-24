@@ -41,7 +41,7 @@
     font-family: "Inconsolata";
 }
 .skills_animation {
-    animation: intersectionAnimation 0.4s forwards;
+    animation: intersectionAnimation 1s forwards;
 }
 /*  */
 @media screen and (max-width: 991px) {

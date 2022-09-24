@@ -20,12 +20,12 @@
     color: white;
 }
 .wh_animation {
-    animation: whAnimation 0.4s forwards;
+    animation: whAnimation 1s forwards;
 }
 @keyframes whAnimation {
     0% {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
     100% {
         opacity: 1;

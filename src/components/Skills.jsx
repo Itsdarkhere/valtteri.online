@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/Skills.css"
 import { FaAngular, FaGit, FaRust, FaReact, FaAws, FaGoogle, FaDatabase } from "react-icons/fa"
 import { SiGoland, SiPostgresql } from "react-icons/si"
-import { useIntersectionObserver } from '../hooks/intersection-observer.ts'
+import { SkillCard } from './SkillCard'
 
 export const Skills = () => {
     const skills_list = [
@@ -44,27 +44,16 @@ export const Skills = () => {
         },
     ]
 
-    const onObserveAnimate = () => {
-        document.getElementById("container_skills").classList.add("skills_animation");
-    }
-
-    const ref = useIntersectionObserver(onObserveAnimate);
-
   return (
-    <div ref={ref} className='section skills_section'>
+    <div className='section skills_section'>
         <div className='container_default' id="container_skills">
             <div className='text_center'>
-                <h2 className="h2" style={{marginBottom: 0}}>Skills and tools</h2>
+                <h2 className="h2" id='skills_header' style={{marginBottom: 0}}>Skills and tools</h2>
             </div>
             <div className='container_small'>
                 <div className='skills_grid'>
                     {skills_list.map((o, i) =>
-                        <div key={i} className='skill_card'>
-                            <div className='skill_icon'>
-                                {o.icon}
-                            </div>
-                            <p className='skill_text'>{o.skill}</p>
-                        </div>
+                        <SkillCard key={i} icon={o.icon} skill={o.skill} />
                     )}
                 </div>
             </div>

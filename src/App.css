@@ -94,6 +94,9 @@
   cursor: pointer;
   border-radius: 0;
 }
+.opacity_0 {
+  opacity: 0;
+}
 .main_button {
   padding: 28px 56px;
   border-radius: 100px;

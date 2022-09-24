@@ -1,7 +1,7 @@
 import React from 'react'
 import "../css/Projects.css"
 import { FaCode, FaRust, FaReact, } from "react-icons/fa"
-import { useIntersectionObserver } from '../hooks/intersection-observer.ts'
+import { ProjectCard } from './ProjectCard'
 
 export const Projects = () => {
     const recent_projects = [
@@ -44,41 +44,19 @@ export const Projects = () => {
         },
     ]
 
-    const onObserveAnimate = () => {
-        // Animate heading instantly
-        document.getElementById("projects_header").classList.add("project_animation");
-        // Animate each project with a small delay between
-        let projects = document.getElementsByClassName("project_card");
-        forEachWithDelay(projects, 100);
-    }
-
-    const forEachWithDelay = (array, delay) => {
-        let i = 0;
-        let interval = setInterval(() => {
-            array[i].classList.add("project_animation");
-            if (++i === array.length) clearInterval(interval);
-        }, delay)
-    }
-
-    const ref = useIntersectionObserver(onObserveAnimate);
-
   return (
     <div className='section section_projects'>
-        <div ref={ref} className='container_default'>
+        <div className='container_default'>
             <h2 className='h2' id="projects_header">Recent Programming Projects</h2>
             <div className='projects_grid'>
                 {recent_projects.map((o, i) => 
-                    <a href={o.link} target="_blank" rel='noreferrer' key={i} className='project_card'>
-                        <div 
-                        className='project_icon' 
-                        >
-                            {o.icon}
-                        </div>
-                        <h3 className='h3'>{o.title}</h3>
-                        <p className='p'>
-                            {o.description}
-                        </p>
-                    </a>
+                    <ProjectCard 
+                    key={i}
+                    link={o.link} 
+                    icon={o.icon}
+                    title={o.title} 
+                    description={o.description} 
+                    />
                 )}
             </div>
         </div>

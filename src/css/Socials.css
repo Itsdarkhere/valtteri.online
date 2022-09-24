@@ -32,9 +32,6 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-.opacity_0 {
-    opacity: 0;
-}
 .socials_animations {
     animation: socialsAnimation 1s forwards;
 }

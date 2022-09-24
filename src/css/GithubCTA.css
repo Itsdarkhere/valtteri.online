@@ -30,13 +30,10 @@
     align-items: center;
 }
 .gh_cta_animation {
-    animation: githubAnimation 0.3s forwards;
+    animation: githubAnimation 1s forwards;
 }
 @keyframes githubAnimation {
     0% {
-        opacity: 0;
-    }
-    75% {
         opacity: 0;
     }
     100% {
