@@ -33,7 +33,7 @@ export const WorkHistory = () => {
                 {/* 
                     CHECK
                 */}
-                As the chief techical officer I made decisitions regarding the stack, 
+                As the chief techical officer I made decisions regarding the stack, 
                 onboarded new developer hires, provided guidance the best I could,
                 kept our repos up to date, reviewed other developers work
                 and still wrote a bunch of the code.
