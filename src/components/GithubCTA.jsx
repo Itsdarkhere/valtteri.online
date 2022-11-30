@@ -21,7 +21,7 @@ export const GithubCTA = () => {
                         <p className='p'>Check out my github, it contains all of my projects!</p>
                     </div>
                     <div className='gh_cta_grid_right'>
-                        <a href="aa" className='basic_button'>
+                        <a href="https://github.com/Itsdarkhere" className='basic_button'>
                             <FaGithub style={{marginRight: "10"}} size="20" />    
                             Open Github
                         </a>
