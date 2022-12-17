@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <div className='container_default'>
             <div className='left_text'>
                 <h1 className='hero_h'>
-                    I'M&nbsp;
+                    I'M<br/>
                     <Typed
                     strings={['VALTTERI', 'A PROGRAMMER']}
                     typeSpeed={50}

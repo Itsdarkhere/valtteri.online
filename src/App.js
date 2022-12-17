@@ -1,4 +1,5 @@
 import './App.css';
+import { Contributions } from './components/Contributions';
 import { GithubCTA } from './components/GithubCTA';
 import { HeroSection } from './components/HeroSection';
 import { Projects } from './components/Projects';
@@ -17,6 +18,7 @@ function App() {
         </div>
       </header>
       <HeroSection />
+      {/* <Contributions /> */}
       <Projects />
       <Skills />
       <GithubCTA />
