@@ -6,9 +6,15 @@ import { ProjectCard } from './ProjectCard'
 export const Projects = () => {
     const recent_projects = [
         {
-            title: "Stable Diffusion NSFW",
-            description: "Stable diffusion from: https://github.com/CompVis/stable-diffusion ( but nsfw is enabled )",
-            link: "https://github.com/Itsdarkhere/SD_NSFW",
+            title: "Blocktickets CheckIn App",
+            description: "App for checking users in to events, available only in the US.",
+            link: "https://apps.apple.com/us/app/BlockticketsCheckIn/iddcc0f3a9-8e2c-42ae-a983-30cf765f75ad",
+            icon: <FaReact color='black' size="40" />,
+        },
+        {
+            title: "This website",
+            description: "Source for this website",
+            link: "https://github.com/Itsdarkhere/valtteri.online",
             icon: <FaCode color='black' size="40" />,
         },
         {
@@ -29,12 +35,6 @@ export const Projects = () => {
             link: "https://github.com/Itsdarkhere/supernovasNext",
             icon: <FaReact color='black' size="40" />
 
-        },
-        {
-            title: "Rust on Exercism",
-            description: "Rust practise from exercism.com",
-            link: "https://github.com/Itsdarkhere/Rust_exercises_on_exercism",
-            icon: <FaRust color='black' size="40" />
         },
         {
             title: "Sepos website",
