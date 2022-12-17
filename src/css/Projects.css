@@ -25,6 +25,7 @@
     background-color: #292941;
     text-align: center;
     transition-duration: 0.1s;
+    transform: translateY(50%);
 }
 .project_card:hover {
     background-color: #1f1f30;
@@ -43,10 +44,6 @@
     animation: projectsIntersection 1s forwards;
 }
 @keyframes projectsIntersection {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
     100% {
         opacity: 1;
         transform: translateY(0%);

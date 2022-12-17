@@ -12,8 +12,13 @@ export const WorkHistory = () => {
         document.getElementById("wh_card_two").classList.add("wh_animation");
     }
 
+    const onObserveAnimateThree = () => {
+      document.getElementById("wh_card_three").classList.add("wh_animation");
+  }
+
     const ref1 = useIntersectionObserver(onObserveAnimateOne);
     const ref2 = useIntersectionObserver(onObserveAnimateTwo);
+    const ref3 = useIntersectionObserver(onObserveAnimateThree);
 
   return (
     <div className='section section_large_padding'>
@@ -24,37 +29,45 @@ export const WorkHistory = () => {
         <div ref={ref1} className='wh_card wh_card_top' id="wh_card_one">
           <img
             className='wh_card_img'
-            src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/new_logo_transp__4__P2iO86ho0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663900682184'
-            alt='supernovas logo'
+            src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/bt_YSW158KmI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671246688261'
+            alt='blocktickets logo'
           />
           <div>
-            <h2 className='h2'>CTO</h2>
+            <h2 className='h2'>Full-stack Developer</h2>
             <p className='wh_card_description'>
-                {/* 
-                    CHECK
-                */}
-                As the chief techical officer I made decisions regarding the stack, 
-                onboarded new developer hires, provided guidance the best I could,
-                kept our repos up to date, reviewed other developers work
-                and still wrote a bunch of the code.
+            As a Contractor at Blocktickets, I was responsible for building a React Native application from the ground up. This included implementing features and functionality, and ensuring the app is user-friendly and intuitive.
+            <br/>
+            <br/>
+            In addition to my work on the React Native app, Im also performing other full stack JavaScript development tasks. This includes working with Node.js and React to create scalable and robust front and back-end systems.
             </p>    
           </div>
         </div>
-        <div ref={ref2} className='wh_card' id="wh_card_two">
+        <div ref={ref2} className='wh_card wh_card_top' id="wh_card_two">
           <img
             className='wh_card_img'
             src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/new_logo_transp__4__P2iO86ho0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663900682184'
             alt='supernovas logo'
           />
           <div>
-            <h2 className='h2'>Full Stack Developer</h2>
+            <h2 className='h2'>CTO</h2>
             <p className='wh_card_description'>
-              {/* CHECK THEREFORE*/}
-              When I started as a developer for Supernovas I had no experience in
-              our frontend (Angular), backend (Go), or blockchain (Deso). 
-              Still inside four months I managed to build so much that we were
-              regarded as one of the top projects in the ecosystem and 
-              therefore managed to raise funding.
+            As the CTO of Supernovas, I was responsible for mentoring and leading a team of developers in building innovative new features and services. I played a role in choosing the tech stack for the company, ensuring that it was scalable, reliable, and effective in meeting our needs.
+            <br/>
+            <br/>
+            Overall, my experience as CTO at a Supernovas has allowed me to develop a strong understanding of the unique challenges and opportunities that come with building and scaling a tech-driven business.
+            </p>    
+          </div>
+        </div>
+        <div ref={ref3} className='wh_card' id="wh_card_three">
+          <img
+            className='wh_card_img'
+            src='https://ik.imagekit.io/s93qwyistj0/valtteriOnline/new_logo_transp__4__P2iO86ho0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663900682184'
+            alt='supernovas logo'
+          />
+          <div>
+            <h2 className='h2'>Full-stack Developer</h2>
+            <p className='wh_card_description'>
+              As a programmer for Supernovas, I developed the existing platform to a point where the team secured a $200k investment. As a result of my efforts, I was promoted to a leadership role within the team.
             </p>
           </div>
         </div>

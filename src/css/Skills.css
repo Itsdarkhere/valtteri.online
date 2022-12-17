@@ -19,6 +19,8 @@
     background-color: #292941;
     text-align: left;
     position: relative;
+    transform: translateY(50%);
+    opacity: 0;
 }
 .skill_icon {
     position: absolute;
@@ -55,10 +57,6 @@
     }
 }
 @keyframes intersectionAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
     100% {
         opacity: 1;
         transform: translateY(0%);
